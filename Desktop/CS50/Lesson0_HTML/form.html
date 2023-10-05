@@ -1,0 +1,30 @@
+<!Doctype html>
+<html lang = "en">
+
+<head>
+    <title> Formulaire </title>
+</head>
+    
+<body>
+    <form>
+        <div>
+            <input name="Full name" type = "text" placeholder="Name">
+            <input name="password" type = "password" placeholder="Password">
+        </div>
+        <div>
+            Favorite Color:
+            <input name="color" type="radio" value="blue"> Blue
+            <input name="color" type="radio" value="green"> Green
+            <input name="color" type="radio" value="yellow"> Yellow
+            <input name="color" type="radio" value="red"> Red
+        </div>
+        <input type="submit">
+        <div>
+            <input name="country" list="countries" placeholder="countries">
+            <datalist id="countries">
+                <option value="Afganistan">
+                <option value="Morocco">
+            </datalist>
+        </div>
+    </form>
+</body>
