@@ -19,5 +19,5 @@ def main():
     item = get_item()
     print(item)
 
+print(Item(4,5))
 
-main()

@@ -11,6 +11,12 @@ class Student:
     def __str__(self):
         return f"{self.name} from {self.house}"
     
+    @classmethod
+    def get(cls):
+        name = input("Name: ")
+        house = input("House: ")
+        return cls(name, house)
+        
     @property
     def name(self):
         return self._name
@@ -49,7 +55,7 @@ class Student:
             #case _:
                 #return "/"
 def main():
-    student = get_student()
+    student = Student.get()    # ""imprtant""
     #print("Expecto Patronum!")
     #print(student.charm())
     #student.house = "111, 119"     #classe give more controle on data --> this line calls house(self,house); use the setter
@@ -57,11 +63,11 @@ def main():
     print(student)
 
 
-def get_student():
-    name = input("Name:")
-    house = input("House: ")
+#def get_student():
+    #name = input("Name:")
+    #house = input("House: ")
     #patronus = input("Patronus: ")
-    return Student(name, house) #goind to instantiate a student object for me                 #able to customize the contents of that object
+    #return Student(name, house) #goind to instantiate a student object for me                 #able to customize the contents of that object
 
 if __name__ == "__main__":
     main()
